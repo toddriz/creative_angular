@@ -1,5 +1,9 @@
 <form (ngSubmit)="doSomething(f)" #f="ngForm">
-    <input type="text" name="firstName" ngModel required>
-    <input type="text" name="lastName" ngModel required>
-    <button type="submit" [disabled]="!f.valid">SUBMIT</button>
+    <div id="inputContainer">
+        <input type="text" placeholder="First Name" name="firstName" ngModel required>
+        <input type="text" placeholder="Last Name" name="lastName" ngModel required>
+    </div>
+    <div class="button">
+        <button type="submit" [disabled]="!f.valid">SUBMIT</button>
+    </div>
 </form>
