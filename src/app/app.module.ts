@@ -3,17 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RockInfoComponent } from './rock-info/rock-info.component';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        RockInfoComponent,
+        UserInfoComponent
     ],
     imports: [
         BrowserModule,
-        BrowserAnimationsModule,
-        AppRoutingModule
+        BrowserAnimationsModule
     ],
     providers: [],
     bootstrap: [AppComponent]
