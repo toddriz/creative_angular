@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { RockInfoComponent } from './rock-info/rock-info.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 
+import { RockService } from './rock.service';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -22,7 +24,7 @@ import { UserInfoComponent } from './user-info/user-info.component';
         MatCardModule,
         FormsModule
     ],
-    providers: [],
+    providers: [RockService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

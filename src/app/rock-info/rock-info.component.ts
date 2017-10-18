@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
     styles: ['./rock-info.component.less']
 })
 export class RockInfoComponent implements OnInit {
-    mineral: object;
+    @Input() mineral: object;
 
     constructor() { }
 
