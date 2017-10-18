@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
-
+import * as _ from 'lodash';
 @Injectable()
 export class RockService {
+    private minerals: object;
 
-    constructor(){ }
+    constructor() {
 
     minerals = {
         a: [
@@ -685,8 +686,8 @@ export class RockService {
         ]
     };
 
-    public getRandomMineral(letter:string){
-        //return a random mineral, given a letter.
+    public getRandomMineral(letter: string) {
+        return _.sample(this.minerals[letter]);
     }
 
 }
