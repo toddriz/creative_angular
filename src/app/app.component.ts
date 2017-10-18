@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-    title = 'app';
+    title = 'We Will Rock You';
+    currentPage: string;
+
+    constructor () {
+        this.currentPage = 'user-info';
+    }
+
+
+
 }
