@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { MatCardModule, MatToolbarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,7 +19,8 @@ import { UserInfoComponent } from './user-info/user-info.component';
         BrowserModule,
         BrowserAnimationsModule,
         MatToolbarModule,
-        MatCardModule
+        MatCardModule,
+        FormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]
