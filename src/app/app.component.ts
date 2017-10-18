@@ -10,11 +10,14 @@ import { RockService } from './rock.service';
 })
 export class AppComponent {
     title = 'We Will Rock You';
-
-    currentMineral: object;
+    firstName: string;
+    lastName: string;
+    firstNameMineral: object;
+    lastNameMineral: object;
 
     constructor (private rockService: RockService) {
-        this.currentMineral = rockService.getRandomMineral('c');
+        this.firstNameMineral = rockService.getRandomMineral(this.firstName[0]);
+        this.lastNameMineral = rockService.getRandomMineral(this.lastName[0]);
     }
 
 }
