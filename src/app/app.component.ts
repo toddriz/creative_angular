@@ -13,8 +13,8 @@ export class AppComponent {
 
     currentMineral: object;
 
-    constructor (rockService: RockService) {
-        this.currentMineral = rockService.getRandomMineral;
+    constructor (private rockService: RockService) {
+        this.currentMineral = {name: 'poo rock', sciName: 'feces rock'} //rockService.getRandomMineral('a');
     }
 
 }
