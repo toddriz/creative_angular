@@ -5,7 +5,7 @@ export class RockService {
 
     constructor(){ }
 
-    let minerals = {
+    minerals = {
         a: [
             {name: 'ACANTHITE', sciName: '(Silver Sulfide)'},
             {name: 'ACTINOLITE', sciName: '(Calcium Magnesium Iron Silicate Hydroxide)'},
@@ -122,7 +122,6 @@ export class RockService {
             {name: 'CALOMEL', sciName: '(Mercury Chloride)'},
             {name: 'CANCRINITE', sciName: '(Sodium Calcium Aluminum Silicate Carbonate)'},
             {name: 'CARBOCERNAITE', sciName: '(Calcium Sodium Strontium Cerium Barium Carbonate)'},
-            {name: 'CARBONATES', sciName: '(Class)'},
             {name: 'CARLETONITE', sciName: '(Hydrated Potassium Sodium Calcium Carbonate Silicate Fluoride Hydroxide)'},
             {name: 'CARNALLITE', sciName: '(Hydrated Potasium Magnesium Chloride)'},
             {name: 'CARNELIAN', sciName: '(variety of Quartz - Silicon Oxide)'},
@@ -227,7 +226,6 @@ export class RockService {
             {name: 'EDENITE', sciName: '(Sodium Calcium Magnesium Iron Aluminum Silicate Hydroxide)'},
             {name: 'EDINGTONITE', sciName: '(Hydrated Barium Aluminum Silicate)'},
             {name: 'ELBAITE', sciName: '(Sodium Lithium Aluminum Boro-Silicate Hydroxide)'},
-            {name: 'ELEMENTS', sciName: '(Class)'},
             {name: 'ELPIDITE', sciName: '(Hydrated Sodium Zirconium Silicate)'},
             {name: 'EMERALD', sciName: '(variety of Beryl- Berylium Aluminum Silicate)'},
             {name: 'EMMONSITE', sciName: '(Hydrated Iron Tellurite)'},
@@ -275,7 +273,6 @@ export class RockService {
             {name: 'GARNET', sciName: '(Group)'},
             {name: 'GASPEITE', sciName: '(Nickel Magnesium Iron Carbonate)'},
             {name: 'GAYLUSSITE', sciName: '(Hydrated Sodium Calcium Carbonate)'},
-            {name: 'GEMSTONES', sciName: '(Class)'},
             {name: 'GEODES', sciName: '(generally hollow sedimentary rocks)'},
             {name: 'GERSDORFFITE', sciName: '(Nickel Arsenide Sulfide)'},
             {name: 'GIBBSITE', sciName: '(Aluminum Hydroxide)'},
@@ -298,7 +295,6 @@ export class RockService {
         ],
         h: [
             {name: 'HACKMANITE', sciName: '(variety of Sodalite, Sodium Aluminum Silicate Chloride)'},
-            {name: 'HALIDES', sciName: '(Class)'},
             {name: 'HALITE', sciName: '(Sodium Chloride)'},
             {name: 'HANKSITE', sciName: '(Potassium Sodium Sulfate Carbonate Chloride)'},
             {name: 'HARDYSTONITE', sciName: '(Calcium Zinc Silicate)'},
@@ -435,7 +431,6 @@ export class RockService {
             {name: 'MILLERITE', sciName: '(Nickel Sulfide)'},
             {name: 'MIMETITE', sciName: '(Lead Chloroarsenate)'},
             {name: 'MINASGERAISITE', sciName: '- (Y) (Calcium Yttrium Beryllium Silicate)'},
-            {name: 'MINERALOIDS', sciName: '(Class)'},
             {name: 'MINIUM', sciName: '(Lead Oxide)'},
             {name: 'MIXITE', sciName: '(Hydrated Bismuth Copper Arsenate Hydroxide)'},
             {name: 'MOCTEZUMITE', sciName: '(Lead Uranyl Tellurite)'},
@@ -479,13 +474,11 @@ export class RockService {
             {name: 'OLIVENITE', sciName: '(Copper Arsenate Hydroxide)'},
             {name: 'ONYX', sciName: '(variety of Quartz - Silicon Oxide)'},
             {name: 'OPAL', sciName: '(Hydrated Silica)'},
-            {name: 'ORGANICS', sciName: '(Class)'},
             {name: 'ORPIMENT', sciName: '(Arsenic Sulfide)'},
             {name: 'ORTHOCLASE', sciName: '(Potasium Aluminum Silicate)'},
             {name: 'OSBORNITE', sciName: '(Titanium Nitride)'},
             {name: 'OSUMILITE', sciName: '(Hydrated Potassium Sodium Iron Magnesium Aluminum Silicate)'},
-            {name: 'OTAVITE', sciName: '(Cadmium Carbonate)'},
-            {name: 'OXIDES', sciName: '(Class)'}
+            {name: 'OTAVITE', sciName: '(Cadmium Carbonate)'}
         ],
         p: [
             {name: 'PACHNOLITE', sciName: '(Hydrated Sodium Calcium Aluminum Fluoride)'},
@@ -506,7 +499,6 @@ export class RockService {
             {name: 'PHILLIPSITE', sciName: '(Hydrated Potasium Sodium Calcium Aluminum Silicate)'},
             {name: 'PHLOGOPITE', sciName: '(Potassium Magnesium Aluminum Silicate Hydroxide)'},
             {name: 'PHOSGENITE', sciName: '(Lead Carbonate Chloride)'},
-            {name: 'PHOSPHATES', sciName: '(Class)'},
             {name: 'PHOSPHOPHYLLITE', sciName: '(Hydrated Zinc Iron Manganese Phosphate)'},
             {name: 'PHOSPHURANYLITE', sciName: '(Hydrated Calcium Uranyl Phosphate Hydroxide)'},
             {name: 'PICROMERITE', sciName: '(Hydrated Potassium Magnesium Sulfate)'},
@@ -595,7 +587,6 @@ export class RockService {
             {name: 'SERPENTINE', sciName: '(Iron Magnesium Nickel Silicate Hydroxide)'},
             {name: 'SHATTUCKITE', sciName: '(Copper Silicate Hydroxide)'},
             {name: 'SIDERITE', sciName: '(Iron Carbonate)'},
-            {name: 'SILICATES', sciName: '(Class)'},
             {name: 'SILICON', sciName: '(Si)'},
             {name: 'SILLIMANITE', sciName: '(Aluminum Silicate)'},
             {name: 'SILVER', sciName: '(Ag)'},
@@ -629,8 +620,6 @@ export class RockService {
             {name: 'STRUNZITE', sciName: '(Calcium Zinc Arsenate Hydroxide)'},
             {name: 'STURMANITE', sciName: '(Hydrated Calcium Iron Aluminum Manganese Sulfate Tetrahydroxoborate Hydroxide)'},
             {name: 'SUGILITE', sciName: '(Potassium Sodium Lithium Iron Manganese Aluminum Silicate)'},
-            {name: 'SULFATES', sciName: '(Class)'},
-            {name: 'SULFIDES', sciName: '(Class)'},
             {name: 'SULFUR', sciName: '(S)'},
             {name: 'SUNSTONE', sciName: '(variety of Oligoclase, Sodium Calcium Aluminum Silicate)'},
             {name: 'SUOLUNITE', sciName: '(Hydrated Calcium Silicate Hydroxide)'},
