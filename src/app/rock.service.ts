@@ -1,73 +1,117 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable()'
 export class RockService {
 
-    constructor() { }
+    constructor()' { }
 
     let minerals = {
         'a': [
             {name: 'ACANTHITE', sciName: '(Silver Sulfide)'},
-            {name: 'ACTINOLITE', sciName: '(Calcium Magnesium Iron Silicate Hydroxide)'}
-            {name: 'ADAMITE', sciName: '(Zinc Arsenate Hydroxide)'}
-            {name: 'AEGIRINE', sciName: '(Sodium Iron Silicate)'}
-            {name: 'AESCHYNITE', sciName: '(Yttrium Calcium Iron Thorium Titanium Niobium Oxide Hydroxide)'}
-            {name: 'AGATE', sciName: '(variety of Quartz - Silicon Oxide)'}
-            {name: 'AJOITE', sciName: '(Hydrated Potassium Sodium Copper Aluminum Silicate Hydroxide)'}
-            {name: 'ALBITE', sciName: '(Sodium Aluminum Silicate)'}
-            {name: 'ALEXANDRITE', sciName: '(variety of Chrysoberyl- Beryllium Aluminum Oxide)'}
-            {name: 'ALLANITE', sciName: '(Calcium Cerium Lanthanum Yttrium Aluminum Iron Silicate Hydroxide)'}
-            {name: 'ALLUVIAL', sciName: '(a type of unconsolidated sediments)'}
-            {name: 'ALMANDINE', sciName: '(Iron Aluminum Silicate)'}
-            {name: 'ALTAITE', sciName: '(Lead Telluride)'}
-            {name: 'ALUMINUM', sciName: '(Al)'}
-            {name: 'ALUNITE', sciName: '(Potassium Aluminum Sulfate Hydroxide)'}
-            {name: 'AMBER', sciName: '(Succinite: fossilized tree resin)'}
-            {name: 'AMBLYGONITE', sciName: '(Lithium Sodium Aluminum Phosphate Fluoride Hydroxide)'}
-            {name: 'AMETHYST', sciName: '(variety of Quartz- Silicon Oxide)'}
-            {name: 'ANALCIME', sciName: '(Hydrated Sodium Aluminum Silicate)'}
-            {name: 'ANAPAITE', sciName: '(Hydrated Calcium Iron Phosphate)'}
-            {name: 'ANATASE', sciName: '(Titanium Oxide)'}
-            {name: 'ANDALUSITE', sciName: '(Aluminum Silicate)'}
-            {name: 'ANDERSONITE', sciName: '(Hydrated Sodium Calcium Uranyl Carbonate)'}
-            {name: 'ANDESINE', sciName: '(Sodium Calcium Aluminum Silicate)'}
-            {name: 'ANDESITE', sciName: '(an extrusive igneous rock)'}
-            {name: 'ANDRADITE', sciName: '(Calcium Iron Silicate)'}
-            {name: 'ANGELITE', sciName: '(trade name for Anhydrite)'}
-            {name: 'ANGLESITE', sciName: '(Lead Sulfate)'}
-            {name: 'ANHYDRITE', sciName: '(Calcium Sulfate)'}
-            {name: 'ANKERITE', sciName: '(Calcium Iron Carbonate)'}
-            {name: 'ANNABERGITE', sciName: '(Hydrated Nickel Arsenate)'}
-            {name: 'ANORTHITE', sciName: '(Calcium Aluminum Silicate)'}
-            {name: 'ANORTHOSITE', sciName: '(a plutonic igneous rock)'}
-            {name: 'ANTHOPHYLLITE', sciName: '(Magnesium Iron Silicate Hydroxide)'}
-            {name: 'ANTIMONY', sciName: '(Sb)'}
-            {name: 'ANTLERITE', sciName: '(Copper Sulfate Hydroxide)'}
-            {name: 'APATITE', sciName: '(Calcium (Fluoro, Chloro, Hydroxyl) Phosphate)'}
-            {name: 'APOPHYLLITE', sciName: '(Hydrated Potassium Calcium Silicate Hydroxide Flouride)'}
-            {name: 'AQUAMARINE', sciName: '(variety of Beryl, Berylium Aluminum Silicate)'}
-            {name: 'ARAGONITE', sciName: '(Calcium Carbonate)'}
-            {name: 'ARFVEDSONITE', sciName: '(Sodium Iron Magnesium Silicate Hydroxide)'}
-            {name: 'ARGENTITE', sciName: '(Silver Sulfide)'}
-            {name: 'ARGYRODITE', sciName: '(Silver Germanium Sulfide)'}
-            {name: 'ARSENIC', sciName: '(As)'}
-            {name: 'ARSENOPYRITE', sciName: '(Iron Arsenide Sulfide)'}
-            {name: 'ARSENTSUMEBITE', sciName: '(Lead Copper Arsenate Sulfate)'}
-            {name: 'ARTHURITE', sciName: '(Hydrated Copper Iron Arsenate Phosphate Sulfate)'}
-            {name: 'ARTINITE', sciName: '(Hydrated Magnesium Carbonate Hydroxide)'}
-            {name: 'ASTEROIDS', sciName: '(primordial stony or metallic rocks in space)'}
-            {name: 'ASTROPHYLLITE', sciName: '(Potassium Iron Titanium Silicate Hydroxide)'}
-            {name: 'ATACAMITE', sciName: '(Copper Chloride Hydroxide)'}
-            {name: 'AUGELITE', sciName: '(Aluminum Phosphate Hydroxide)'}
-            {name: 'AUGITE', sciName: '(Calcium Sodium Magnesium Aluminum Iron Titanium Silicate)'}
-            {name: 'AURICHALCITE', sciName: '(Zinc Copper Carbonate Hydroxide)'}
-            {name: 'AUSTINITE', sciName: '(Calcium Zinc Arsenate Hydroxide)'}
-            {name: 'AUTUNITE', sciName: '(Hydrated Calcium Uranyl Phosphate)'}
-            {name: 'AXINITE', sciName: '(Calcium Iron Magnesium Manganese Aluminum Boro-Silicate Hydroxide)'}
+            {name: 'ACTINOLITE', sciName: '(Calcium Magnesium Iron Silicate Hydroxide)'},
+            {name: 'ADAMITE', sciName: '(Zinc Arsenate Hydroxide)'},
+            {name: 'AEGIRINE', sciName: '(Sodium Iron Silicate)'},
+            {name: 'AESCHYNITE', sciName: '(Yttrium Calcium Iron Thorium Titanium Niobium Oxide Hydroxide)'},
+            {name: 'AGATE', sciName: '(variety of Quartz - Silicon Oxide)'},
+            {name: 'AJOITE', sciName: '(Hydrated Potassium Sodium Copper Aluminum Silicate Hydroxide)'},
+            {name: 'ALBITE', sciName: '(Sodium Aluminum Silicate)'},
+            {name: 'ALEXANDRITE', sciName: '(variety of Chrysoberyl- Beryllium Aluminum Oxide)'},
+            {name: 'ALLANITE', sciName: '(Calcium Cerium Lanthanum Yttrium Aluminum Iron Silicate Hydroxide)'},
+            {name: 'ALLUVIAL', sciName: '(a type of unconsolidated sediments)'},
+            {name: 'ALMANDINE', sciName: '(Iron Aluminum Silicate)'},
+            {name: 'ALTAITE', sciName: '(Lead Telluride)'},
+            {name: 'ALUMINUM', sciName: '(Al)'},
+            {name: 'ALUNITE', sciName: '(Potassium Aluminum Sulfate Hydroxide)'},
+            {name: 'AMBER', sciName: '(Succinite: fossilized tree resin)'},
+            {name: 'AMBLYGONITE', sciName: '(Lithium Sodium Aluminum Phosphate Fluoride Hydroxide)'},
+            {name: 'AMETHYST', sciName: '(variety of Quartz- Silicon Oxide)'},
+            {name: 'ANALCIME', sciName: '(Hydrated Sodium Aluminum Silicate)'},
+            {name: 'ANAPAITE', sciName: '(Hydrated Calcium Iron Phosphate)'},
+            {name: 'ANATASE', sciName: '(Titanium Oxide)'},
+            {name: 'ANDALUSITE', sciName: '(Aluminum Silicate)'},
+            {name: 'ANDERSONITE', sciName: '(Hydrated Sodium Calcium Uranyl Carbonate)'},
+            {name: 'ANDESINE', sciName: '(Sodium Calcium Aluminum Silicate)'},
+            {name: 'ANDESITE', sciName: '(an extrusive igneous rock)'},
+            {name: 'ANDRADITE', sciName: '(Calcium Iron Silicate)'},
+            {name: 'ANGELITE', sciName: '(trade name for Anhydrite)'},
+            {name: 'ANGLESITE', sciName: '(Lead Sulfate)'},
+            {name: 'ANHYDRITE', sciName: '(Calcium Sulfate)'},
+            {name: 'ANKERITE', sciName: '(Calcium Iron Carbonate)'},
+            {name: 'ANNABERGITE', sciName: '(Hydrated Nickel Arsenate)'},
+            {name: 'ANORTHITE', sciName: '(Calcium Aluminum Silicate)'},
+            {name: 'ANORTHOSITE', sciName: '(a plutonic igneous rock)'},
+            {name: 'ANTHOPHYLLITE', sciName: '(Magnesium Iron Silicate Hydroxide)'},
+            {name: 'ANTIMONY', sciName: '(Sb)'},
+            {name: 'ANTLERITE', sciName: '(Copper Sulfate Hydroxide)'},
+            {name: 'APATITE', sciName: '(Calcium Fluoro, Chloro, Hydroxyl) Phosphate)'},
+            {name: 'APOPHYLLITE', sciName: '(Hydrated Potassium Calcium Silicate Hydroxide Flouride)'},
+            {name: 'AQUAMARINE', sciName: '(variety of Beryl, Berylium Aluminum Silicate)'},
+            {name: 'ARAGONITE', sciName: '(Calcium Carbonate)'},
+            {name: 'ARFVEDSONITE', sciName: '(Sodium Iron Magnesium Silicate Hydroxide)'},
+            {name: 'ARGENTITE', sciName: '(Silver Sulfide)'},
+            {name: 'ARGYRODITE', sciName: '(Silver Germanium Sulfide)'},
+            {name: 'ARSENIC', sciName: '(As)'},
+            {name: 'ARSENOPYRITE', sciName: '(Iron Arsenide Sulfide)'},
+            {name: 'ARSENTSUMEBITE', sciName: '(Lead Copper Arsenate Sulfate)'},
+            {name: 'ARTHURITE', sciName: '(Hydrated Copper Iron Arsenate Phosphate Sulfate)'},
+            {name: 'ARTINITE', sciName: '(Hydrated Magnesium Carbonate Hydroxide)'},
+            {name: 'ASTEROIDS', sciName: '(primordial stony or metallic rocks in space)'},
+            {name: 'ASTROPHYLLITE', sciName: '(Potassium Iron Titanium Silicate Hydroxide)'},
+            {name: 'ATACAMITE', sciName: '(Copper Chloride Hydroxide)'},
+            {name: 'AUGELITE', sciName: '(Aluminum Phosphate Hydroxide)'},
+            {name: 'AUGITE', sciName: '(Calcium Sodium Magnesium Aluminum Iron Titanium Silicate)'},
+            {name: 'AURICHALCITE', sciName: '(Zinc Copper Carbonate Hydroxide)'},
+            {name: 'AUSTINITE', sciName: '(Calcium Zinc Arsenate Hydroxide)'},
+            {name: 'AUTUNITE', sciName: '(Hydrated Calcium Uranyl Phosphate)'},
+            {name: 'AXINITE', sciName: '(Calcium Iron Magnesium Manganese Aluminum Boro-Silicate Hydroxide)'},
             {name: 'AZURITE', sciName: '(Copper Carbonate Hydroxide)'}
         ],
         'b': [
-
+            {name: 'BABINGTONITE', sciName: '(Calcium Iron Manganese Silicate Hydroxide)'},
+            {name: 'BAKERITE', sciName: '(Hydrated Calcium Boro-silicate Hydroxide)'},
+            {name: 'BARATOVITE', sciName: '(Potassium Lithium Calcium Titanium Zirconium Silicate Fluoride)'},
+            {name: 'BARITE', sciName: '(Barium Sulfate)'},
+            {name: 'BASALT', sciName: '(the most common igneous rock)'},
+            {name: 'BASTNASITE', sciName: '(Cerium Lanthanum Yttrium Carbonate Fluoride)'},
+            {name: 'BAUMHAUERITE', sciName: '(Lead Arsenic Sulfide)'},
+            {name: 'BAYLDONITE', sciName: '(Hydrated Copper Lead Arsenate Hydroxide)'},
+            {name: 'BECQUERELITE', sciName: '(Hydrated Calcium Uranyl Oxide Hydroxide)'},
+            {name: 'BENITOITE', sciName: '(Barium Titanium Silicate)'},
+            {name: 'BERAUNITE', sciName: '(Hydrated Iron Phosphate Hydroxide)'},
+            {name: 'BERLINITE', sciName: '(Aluminum Phosphate)'},
+            {name: 'BERTHIERITE', sciName: '(Iron Antimony Sulfide)'},
+            {name: 'BERTRANDITE', sciName: '(Beryllium Silicate Hydroxide)'},
+            {name: 'BERYL', sciName: '(Berylium Aluminum Silicate)'},
+            {name: 'BERYLLONITE', sciName: '(Sodium Beryllium Phosphate)'},
+            {name: 'BETAFITE', sciName: '(Calcium Sodium Uranium Titanium Niobium Tantalum Oxide Hydroxide Fluoride)'},
+            {name: 'BEUDANTITE', sciName: '(Lead Iron Arsenate Sulfate Hydroxide)'},
+            {name: 'BIDEAUXITE', sciName: '(Lead Silver Chloride Fluoride Hydroxide)'},
+            {name: 'BIF', sciName: '(Banded Iron Formation aka Taconite)'},
+            {name: 'BINDHEIMITE', sciName: '(Lead Antimony Oxide)'},
+            {name: 'BIOTITE', sciName: '(Potassium Iron Magnesium Aluminum Silicate Hydroxide Fluoride)'},
+            {name: 'BISMUTH', sciName: '(Bi)'},
+            {name: 'BISMUTHINITE', sciName: '(Bismuth Sulfide)'},
+            {name: 'BIXBYITE', sciName: '(Manganese Iron Oxide)'},
+            {name: 'BLODITE', sciName: '(Hydrated Sodium Magnesium Sulfate)'},
+            {name: 'BLOODSTONE', sciName: '(variety of Chalcedony)'},
+            {name: 'BOLEITE', sciName: '(Hydrated Lead Copper Silver Chloride Hydroxide)'},
+            {name: 'BOLTWOODITE', sciName: '(Hydrated Potassium Uranyl Silicate Hydroxide)'},
+            {name: 'BORACITE', sciName: '(Magnesium Borate Chloride)'},
+            {name: 'BORAX', sciName: '(Hydrated Sodium Borate)'},
+            {name: 'BORNITE', sciName: '(Copper Iron Sulfide)'},
+            {name: 'BOULANGERITE', sciName: '(Lead Antimony Sulfide)'},
+            {name: 'BOURNONITE', sciName: '(Copper Lead Antimony Sulfide)'},
+            {name: 'BRANNERITE', sciName: '(Uranium Calcium Titanium Iron Oxide)'},
+            {name: 'BRASS', sciName: '(Copper Zinc Alloy)'},
+            {name: 'BRAZILIANITE', sciName: '(Sodium Aluminum Phosphate Hydroxide)'},
+            {name: 'BRECCIA', sciName: '(a clastic sedimentary rock)'},
+            {name: 'BROCHANTITE', sciName: '(Copper Sulfate Hydroxide)'},
+            {name: 'BROOKITE', sciName: '(Titanium Oxide)'},
+            {name: 'BRUCITE', sciName: '(Magnesium Hydroxide)'},
+            {name: 'BUERGERITE', sciName: '(Sodium Iron Aluminum Boro-silicate Oxide Fluoride)'},
+            {name: 'BURBANKITE', sciName: '(Sodium Calcium Strontium Barium Cerium Carbonate)'},
+            {name: 'BUTTGENBACHITE', sciName: '(Hydrated Copper Nitrate Chloride Hydroxide)'},
+            {name: 'BYTOWNITE', sciName: '(Calcium Sodium Aluminum Silicate)'}
         ],
         'c': [
 
@@ -105,7 +149,7 @@ export class RockService {
         'z': []
     };
 
-    public getRandomMineral(letter:string){
+    public getRandomMineral(letter:string)'{
         //return a random mineral, given a letter.
     }
 

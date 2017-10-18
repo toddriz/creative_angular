@@ -1,3 +1,5 @@
-<div class="user-info">
-    <div>User Info</div>
-</div>
+<form (ngSubmit)="doSomething(f)" #f="ngForm">
+    <input type="text" name="firstName" ngModel required>
+    <input type="text" name="lastName" ngModel required>
+    <button type="submit" [disabled]="!f.valid">SUBMIT</button>
+</form>
