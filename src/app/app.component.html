@@ -3,7 +3,7 @@
 <mat-card *ngIf="currentPage === 'user-info'" class="app-content-card">
     <app-user-info></app-user-info>
 </mat-card>
-<mat-card *ngIf="currentPage === 'rock-info'" class="app-content-card">
-    <app-rock-info></app-rock-info>
-
+<!-- set to rock info not user info -->
+<mat-card *ngIf="currentPage === 'user-info'" class="app-content-card">
+    <app-rock-info [mineral]="currentMineral"></app-rock-info>
 </mat-card>
