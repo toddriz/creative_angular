@@ -12,4 +12,7 @@ export class RockInfoComponent implements OnInit {
 
     ngOnInit() { }
 
+    test() {
+        console.log(this.mineral);
+    }
 }

@@ -19,7 +19,7 @@ export class AppComponent {
     constructor (private rockService: RockService) {}
 
     isTriggered(event) {
-        console.log(event['first'], event['last']);
+        this.currentMineral = this.rockService.getRandomMineral(event['first']);
     }
 
 }
