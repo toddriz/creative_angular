@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { RockInfoComponent } from './rock-info/rock-info.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { RockService } from './rock.service';
@@ -14,12 +15,13 @@ export class AppComponent {
     lastName: string = '';
     firstNameMineral: object;
     lastNameMineral: object;
-    currentMineral: null;
+    currentMineral: object = null;
 
-    constructor (private rockService: RockService) {}
+    constructor(private rockService: RockService) { }
 
     isTriggered(event) {
-        this.currentMineral = this.rockService.getRandomMineral(event['first']);
+        this.firstNameMineral = this.rockService.getRandomMineral(this.firstName[0]);
+        this.lastNameMineral = this.rockService.getRandomMineral(this.lastName[0]);
     }
 
 }
