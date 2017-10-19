@@ -20,8 +20,12 @@ export class AppComponent {
     constructor(private rockService: RockService) { }
 
     isTriggered(event) {
+        console.log(event);
+        this.firstName = event.first;
+        this.lastName = event.last;
         this.firstNameMineral = this.rockService.getRandomMineral(this.firstName[0]);
         this.lastNameMineral = this.rockService.getRandomMineral(this.lastName[0]);
+        console.log(this.firstNameMineral);
     }
 
 }

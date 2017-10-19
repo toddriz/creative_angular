@@ -4,13 +4,11 @@ import { minerals } from './minerals';
 
 @Injectable()
 export class RockService {
-    private minerals = minerals;
 
-    constructor() {
-    }
+    constructor() { }
 
     public getRandomMineral(letter: string) {
-        return _.sample(this.minerals[letter]);
+        return _.sample(minerals[letter.toLowerCase()]);
     }
 
 }
