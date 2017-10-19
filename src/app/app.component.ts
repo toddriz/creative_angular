@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { RockInfoComponent } from './rock-info/rock-info.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { RockService } from './rock.service';
@@ -17,7 +18,7 @@ export class AppComponent {
     firstMineral: null;
     lastMineral: null;
 
-    constructor (private rockService: RockService) {}
+    constructor(private rockService: RockService) { }
 
     isTriggered(event) {
         this.firstMineral = this.rockService.getRandomMineral(event['first']);

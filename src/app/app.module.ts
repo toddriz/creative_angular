@@ -11,12 +11,14 @@ import { RockInfoComponent } from './rock-info/rock-info.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 
 import { RockService } from './rock.service';
+import { TitlecasePipe } from './titlecase.pipe';
 
 @NgModule({
     declarations: [
         AppComponent,
         RockInfoComponent,
-        UserInfoComponent
+        UserInfoComponent,
+        TitlecasePipe
     ],
     imports: [
         BrowserModule,
