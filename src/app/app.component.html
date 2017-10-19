@@ -1,7 +1,7 @@
 <mat-card class="app-header-card">We Will Rock You</mat-card>
 
 <mat-card class="app-content-card">
-    <app-user-info></app-user-info>
+    <app-user-info [firstName]="firstName" [lastName]="lastName" (rockz)="isTriggered($event)"></app-user-info>
 </mat-card>
 <mat-card *ngIf="currentMineral" class="app-content-card">
     <app-rock-info [mineral]="currentMineral"></app-rock-info>
