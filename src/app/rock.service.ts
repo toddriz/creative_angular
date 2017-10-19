@@ -6,7 +6,7 @@ export class RockService {
 
     constructor() {
 
-        minerals = {
+        this.minerals = {
             a: [
                 { name: 'ACANTHITE', sciName: '(Silver Sulfide)' },
                 { name: 'ACTINOLITE', sciName: '(Calcium Magnesium Iron Silicate Hydroxide)' },

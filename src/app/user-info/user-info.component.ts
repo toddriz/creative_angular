@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { NgForm} from '@angular/forms';
 
 @Component({
@@ -7,15 +7,19 @@ import { NgForm} from '@angular/forms';
     styleUrls: ['./user-info.component.less']
 })
 export class UserInfoComponent implements OnInit {
+    @Input('firstName') firstName; 
+    @Input('lastName') lastName;
+    @Output() rockz = new EventEmitter<{first: string, last: string}>();
 
     constructor() { }
 
     ngOnInit() {
-    }
+    } 
 
     doSomething(form: NgForm) {
-        let firstName = form.value['firstName'];
-        let lastName = form.value['lastName'];
+        this.firstName = form.value['firstName'];
+        this.lastName = form.value['lastName'];
+        this.rockz.emit({first: this.firstName, last: this.lastName});
     }
 
 }
