@@ -10,10 +10,11 @@ import { RockService } from './rock.service';
 })
 export class AppComponent {
     title = 'We Will Rock You';
-    firstName: string;
-    lastName: string;
+    firstName: string = '';
+    lastName: string = '';
     firstNameMineral: object;
     lastNameMineral: object;
+    currentMineral: null;
 
     constructor (private rockService: RockService) {}
 
