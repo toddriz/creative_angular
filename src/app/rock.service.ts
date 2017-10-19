@@ -732,8 +732,8 @@ export class RockService {
         };
     }
     
-    public getRandomMineral(letter: string) {
-        return _.sample(this.minerals[letter]);
+    public getRandomMineral(firstName: string) {
+        return _.sample(this.minerals[firstName[0].toLowerCase()], 1);
     }
 
 }

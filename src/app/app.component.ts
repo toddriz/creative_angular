@@ -14,12 +14,14 @@ export class AppComponent {
     lastName: string = '';
     firstNameMineral: object;
     lastNameMineral: object;
-    currentMineral: null;
+    firstMineral: null;
+    lastMineral: null;
 
     constructor (private rockService: RockService) {}
 
     isTriggered(event) {
-        this.currentMineral = this.rockService.getRandomMineral(event['first']);
+        this.firstMineral = this.rockService.getRandomMineral(event['first']);
+        this.lastMineral =  this.rockService.getRandomMineral(event['last']);
     }
 
 }
