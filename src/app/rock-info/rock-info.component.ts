@@ -3,13 +3,21 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
     selector: 'app-rock-info',
     templateUrl: './rock-info.component.html',
-    styles: ['./rock-info.component.less']
+    styleUrls: ['./rock-info.component.less']
 })
 export class RockInfoComponent implements OnInit {
-    @Input() mineral: object;
+    @Input() firstMineral: object;
+    @Input() lastMineral: object;
 
     constructor() { }
 
     ngOnInit() { }
 
+    name() {
+        return this.firstMineral['name'] + " " + this.lastMineral['name'];
+    }
+
+    sciName() {
+        return (this.firstMineral['sciName']).slice(0, -1) + " " + (this.lastMineral['sciName']).substr(1);
+    }
 }

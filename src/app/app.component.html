@@ -1,8 +1,22 @@
 <mat-card class="app-header-card">We Will Rock You</mat-card>
-
-<mat-card class="app-content-card">
-    <app-user-info></app-user-info>
-</mat-card>
-<mat-card *ngIf="currentMineral" class="app-content-card">
-    <app-rock-info [mineral]="currentMineral"></app-rock-info>
-</mat-card>
+<div id="daBody">
+    <div id="space"></div>
+    <div class="fc">
+        <mat-card class="app-content-card">
+            <div class="f">
+                <div class="line">
+                    <div class="text">Your Name:</div>
+                </div>
+            </div>
+            <app-user-info [firstName]="firstName" [lastName]="lastName" (rockz)="isTriggered($event)"></app-user-info>
+        </mat-card>
+        <mat-card *ngIf="firstMineral" class="app-content-card">
+            <div class="f">
+                <div class="line">
+                    <div class="text">Your Rock Stripper Name!</div>
+                </div>
+            </div>
+            <app-rock-info [firstMineral]="firstMineral" [lastMineral]="lastMineral"></app-rock-info>
+        </mat-card>
+    </div>
+</div>
