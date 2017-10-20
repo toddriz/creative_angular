@@ -22,6 +22,6 @@ export class RockInfoComponent implements OnInit {
     }
 
     searchUrl(name: string){
-        return ('http://www.google.com/search?q=' + name.split(' ').join('+'));
+        return ('https://www.google.com/search?q=' + name.split(' ').join('+'));
     }
 }
