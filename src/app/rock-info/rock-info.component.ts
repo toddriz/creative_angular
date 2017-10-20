@@ -20,4 +20,8 @@ export class RockInfoComponent implements OnInit {
     sciName() {
         return (this.firstMineral['sciName']).slice(0, -1) + " " + (this.lastMineral['sciName']).substr(1);
     }
+
+    searchUrl(name: string){
+        return ('http://www.google.com/search?q=' + name.split(' ').join('+'));
+    }
 }
